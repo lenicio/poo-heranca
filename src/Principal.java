@@ -1,18 +1,28 @@
-import br.com.zorp.pessoas.Pessoa;
-import br.com.zorp.validacoes.Validar;
+import br.com.zorp.pessoas.Aluno;
+import br.com.zorp.pessoas.Professor;
+
 public class Principal {
     public static void main(String[] args) {
-        Pessoa pessoa1 = new Pessoa();
+        Aluno aluno1 = new Aluno();
+        Professor professor1 = new Professor();
 
-        pessoa1.setNome("Lenício Jr");
-        pessoa1.setIdade(27);
-        pessoa1.setCpf("96782076055");
-        pessoa1.setGenero("Masculino");
+        aluno1.setNome("Kethellyn");
+        aluno1.setCpf("15023368041");
+        aluno1.setGenero("Feminino");
+        aluno1.setIdade(18);
+        aluno1.setMatricula("2321010");
 
-        System.out.println(pessoa1.getNome());
-        System.out.println(pessoa1.getIdade());
-        System.out.println(pessoa1.getCpf());
-        System.out.println(pessoa1.getGenero());
+        professor1.setNome("Lenício Jr");
+        professor1.setCpf("01530001471");
+        professor1.setGenero("Maculino");
+        professor1.setIdade(27);
+        professor1.setDepartamento("Computação");
+
+
+
+        aluno1.apresentar();
+        professor1.apresentar();
+
 
     }
 }

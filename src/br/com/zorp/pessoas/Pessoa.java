@@ -2,10 +2,21 @@ package br.com.zorp.pessoas;
 import br.com.zorp.validacoes.Validar;
 
 public class Pessoa {
-    private String nome;
-    private int idade;
-    private String cpf;
-    private String genero;
+    protected String nome;
+    protected int idade;
+    protected String cpf;
+    protected String genero;
+
+    public void apresentar() {
+        System.out.printf("""
+                *************************************************
+                Nome: %s
+                Idade: %d
+                CPF: %s
+                Genero: %s
+                *************************************************
+                """, nome, idade, cpf, genero);
+    }
 
     public String getNome() {
         return nome;
